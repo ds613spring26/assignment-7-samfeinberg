@@ -6,6 +6,7 @@
 n <- 200
 
 ui <- bootstrapPage(
+  h2('Sam Feinberg'),
   numericInput('n', 'Number of obs', n),
   plotOutput(outputId = 'boxplot')
 )
