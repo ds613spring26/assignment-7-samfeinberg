@@ -12,7 +12,8 @@ ui <- bootstrapPage(
 
 server <- function(input, output) {
   output$boxplot <- renderPlot({
-    boxplot(runif(input$n))
+    boxplot(runif(input$n),
+            col = 'red')
   })
 }
 
