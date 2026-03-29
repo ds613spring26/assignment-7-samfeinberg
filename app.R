@@ -19,3 +19,8 @@ server <- function(input, output) {
 }
 
 shinyApp(ui = ui, server = server)
+
+# To change the plot from histogram to boxplot, I changed the plotOutud outputId to
+# be 'boxplot'. Then I used that outputId with renderPlot to render the boxplot. I added
+# an argument 'col' inside the boxplot to make it red. I used h2 in the UI to put my name
+# at the top in header 2 size.
